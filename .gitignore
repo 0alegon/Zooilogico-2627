@@ -1,0 +1,40 @@
+# IntelliJ IDEA: configuración local y compilación
+.idea/
+*.iml
+*.ipr
+*.iws
+out/
+
+# Java: clases compiladas y paquetes generados
+*.class
+*.jar
+*.war
+*.ear
+*.jmod
+hs_err_pid*
+replay_pid*
+
+# Directorios de compilación habituales
+build/
+target/
+bin/
+.gradle/
+
+# Archivos temporales y copias de seguridad
+*.log
+*.tmp
+*.temp
+*.bak
+*.swp
+*.swo
+*~
+
+# Archivos del sistema operativo
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Archivos de configuración personal del entorno
+.env
+.env.*
+!.env.example
