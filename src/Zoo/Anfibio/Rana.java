@@ -1,27 +1,35 @@
-package Zoo;
+package Zoo.Anfibio;
 
-public class Salamandra extends Anfibio {
-    // Atributos específicos de Salamandra podrían añadirse aquí
+import java.util.Random;
+
+public class Rana extends Anfibio {
+    private static final String[] coloresPielPosibles = {"verde", "rojo", "azul"};
 
     // Constructor sin parámetros
-    public Salamandra() {
+    public Rana() {
         super();
-        // La salamandra podría tener configuraciones predeterminadas o valores aleatorios específicos
+        Random random = new Random();
+        setColorPiel(coloresPielPosibles[random.nextInt(coloresPielPosibles.length)]);
     }
 
     // Constructor con parámetros
-    public Salamandra(String nombre, int edad, float peso, boolean puedeRespirarBajoAgua, String colorPiel) {
+    public Rana(String nombre, int edad, float peso, boolean puedeRespirarBajoAgua, String colorPiel) {
         super(nombre, edad, peso, puedeRespirarBajoAgua, colorPiel);
     }
 
     @Override
-    public void moverse() {
-        System.out.println(getNombre() + " la salamandra está reptando lentamente.");
+    public void nadar() {
+        System.out.println(getNombre() + " la rana está dando saltos en el agua.");
     }
 
-    // Método único de Salamandra
-    public void regenerar() {
-        System.out.println(getNombre() + " está regenerando su cola.");
+    @Override
+    public void moverse() {
+        System.out.println(getNombre() + " la rana está saltando por la tierra.");
+    }
+
+    // Método único de Rana
+    public void croar() {
+        System.out.println(getNombre() + " está croando.");
     }
 
     @Override
@@ -34,7 +42,7 @@ public class Salamandra extends Anfibio {
             this::moverse,
             this::nadar,
             this::metamorfosis,
-            this::regenerar
+            this::croar
         };
 
         for (int i = 0; i < 3; i++) {

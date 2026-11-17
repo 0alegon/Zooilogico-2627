@@ -1,4 +1,6 @@
-package Zoo;
+package Zoo.Anfibio;
+
+import Zoo.Animal;
 
 import java.util.Random;
 

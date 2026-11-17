@@ -1,5 +1,8 @@
 package Zoo;
 
+import Zoo.Anfibio.Rana;
+import Zoo.Anfibio.Salamandra;
+
 import java.util.ArrayList;
 import java.util.List;
 
