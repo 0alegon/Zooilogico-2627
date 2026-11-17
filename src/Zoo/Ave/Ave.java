@@ -5,7 +5,7 @@ import Zoo.Animal;
 import java.util.Random;
 
     public class Ave extends Animal {
-        private String colorPlumaje;
+        private String colorPlumas;
         private double envergadura;
         private boolean puedeVolar;
         private boolean ponerHuevos;
@@ -17,7 +17,7 @@ import java.util.Random;
         public Ave() {
             super();
             Random random = new Random();
-            this.colorPlumaje = colorPlumaje[random.nextInt(colorPlumaje.length())];
+            this.colorPlumas = colorPlumaje[random.nextInt(colorPlumas.length())];
             this.ponerHuevos = random.nextBoolean();
             this.puedeVolar = random.nextBoolean();
             this.envergadura = random.nextDouble();
@@ -27,7 +27,7 @@ import java.util.Random;
         // Constructor con parámetros
         public Ave(String nombre, int edad, float peso, boolean puedeVolar, String colorPlumaje, double envergadura, boolean ponerHuevos, boolean acicalarse) {
             super(nombre, edad, peso);
-            this.colorPlumaje = colorPlumaje;
+            this.colorPlumas = colorPlumaje;
             this.ponerHuevos = ponerHuevos;
             this.puedeVolar = puedeVolar;
             this.envergadura = envergadura;
@@ -35,7 +35,7 @@ import java.util.Random;
         }
 
         protected void setColorPlumaje(String colorPlumajel) {
-            this.colorPlumaje = colorPlumaje;
+            this.colorPlumas = colorPlumas;
         }
 
         public void volar() {
